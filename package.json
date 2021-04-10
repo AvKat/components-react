@@ -1,0 +1,21 @@
+{
+  "name": "component-creator",
+  "version": "0.1.0",
+  "description": "Ease the pain ot of rebuilding react-components",
+  "main": "src/index.js",
+  "author": "AvKat",
+  "license": "MIT",
+  "bin": {
+    "crc": "./src/index.js"
+  },
+  "scripts": {
+    "setup": "yarn && npm i -g ."
+  },
+  "private": true,
+  "dependencies": {
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
