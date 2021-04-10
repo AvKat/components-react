@@ -6,7 +6,7 @@ function replaceAll(str, find, replace) {
 	return str.replace(new RegExp(escapedFind, "g"), replace);
 }
 
-const createComponent = (name, isTS) => {
+const createComponent = (name, isTS, isFile, indexOnly) => {
 	if (fs.existsSync(name)) {
 		console.log("Folder with same name exists!");
 		process.exit();
