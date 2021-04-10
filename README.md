@@ -1,4 +1,4 @@
-# Component-Creator
+# Components React
 Create new react components with a breeze
 
 ### Setup

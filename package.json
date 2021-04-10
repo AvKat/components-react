@@ -1,6 +1,6 @@
 {
-  "name": "component-creator",
-  "version": "0.1.0",
+  "name": "components-react",
+  "version": "0.2.0",
   "description": "Ease the pain ot of rebuilding react-components",
   "main": "src/index.js",
   "author": "AvKat",
