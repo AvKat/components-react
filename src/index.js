@@ -10,6 +10,11 @@ const args = require("yargs/yargs")(process.argv.slice(2))
 	.alias("t", "ts")
 	.describe("t", "Typescript")
 	.default("t", false)
+	// Class Component?
+	.boolean("c")
+	.alias("c", "class")
+	.describe("c", "Class Component?")
+	.default("c", false)
 	//File only
 	.boolean("f")
 	.alias("f", "file")
