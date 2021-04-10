@@ -1,8 +1,8 @@
 # Components React
 Create new react components with a breeze
 
-### Setup
-`yarn setup`
+# Installation
+`npm i -g  @avkat/crc`
 
 ### Usage
 crc <Name> [options]

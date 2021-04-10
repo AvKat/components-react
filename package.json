@@ -1,5 +1,5 @@
 {
-  "name": "components-react",
+  "name": "@avkat/crc",
   "version": "0.2.0",
   "description": "Ease the pain ot of rebuilding react-components",
   "main": "src/index.js",
