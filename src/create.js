@@ -17,7 +17,7 @@ const createComponent = (name, isTS, isClass, isFile, indexOnly) => {
 		} else {
 			fs.mkdirSync(`./${name}`);
 			if (indexOnly) {
-				fs.writeFileSync(`./${name}/index.${isTS ? "tsx" : "jsx"}`, indexData);
+				fs.writeFileSync(`./${name}/index.${isTS ? "tsx" : "jsx"}`, mainData);
 			} else {
 				fs.writeFileSync(`./${name}/index.js`, indexData);
 				fs.writeFileSync(`./${name}/${name}.${isTS ? "tsx" : "jsx"}`, mainData);
