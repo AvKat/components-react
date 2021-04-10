@@ -1,12 +1,8 @@
 const fs = require("fs");
 const path = require("path");
+const { getTemplate } = require("./getTemplate");
 
-function replaceAll(str, find, replace) {
-	var escapedFind = find.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
-	return str.replace(new RegExp(escapedFind, "g"), replace);
-}
-
-const createComponent = (name, isTS, isFile, indexOnly) => {
+const createComponent = (name, isTS, isClass, isFile, indexOnly) => {
 	if (fs.existsSync(name)) {
 		console.log("Folder with same name exists!");
 		process.exit();
@@ -14,17 +10,7 @@ const createComponent = (name, isTS, isFile, indexOnly) => {
 
 	try {
 		const indexData = `export * from './${name}'`;
-		let mainData = fs.readFileSync(
-			path.join(
-				process.argv[1],
-				"..",
-				"..",
-				"templates",
-				"functional-template.js"
-			),
-			{ encoding: "utf8", flag: "r" }
-		);
-		mainData = replaceAll(mainData, "ComponentName", name);
+		const mainData = getTemplate(name, isClass);
 
 		fs.mkdirSync(`./${name}`);
 		fs.writeFileSync(`./${name}/index.js`, indexData);

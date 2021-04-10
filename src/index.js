@@ -30,4 +30,4 @@ const args = require("yargs/yargs")(process.argv.slice(2))
 	.help("h")
 	.alias("h", "help").argv;
 
-createComponent(args._[0], args.t, args.f, args.i);
+createComponent(args._[0], args.t, args.c, args.f, args.i);
