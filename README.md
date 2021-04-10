@@ -5,7 +5,7 @@ Create new react components with a breeze
 `npm i -g  @avkat/crc`
 
 ### Usage
-crc <Name> [options]
+`crc <ComponentName> [options]`
 
 *Options:*
 -t : Typescript
