@@ -12,9 +12,17 @@ const createComponent = (name, isTS, isClass, isFile, indexOnly) => {
 		const indexData = `export * from './${name}'`;
 		const mainData = getTemplate(name, isClass);
 
-		fs.mkdirSync(`./${name}`);
-		fs.writeFileSync(`./${name}/index.js`, indexData);
-		fs.writeFileSync(`./${name}/${name}.${isTS ? "tsx" : "jsx"}`, mainData);
+		if (isFile) {
+			fs.writeFileSync(`./${name}.${isTS ? "tsx" : "jsx"}`, mainData);
+		} else {
+			fs.mkdirSync(`./${name}`);
+			if (indexOnly) {
+				fs.writeFileSync(`./${name}/index.${isTS ? "tsx" : "jsx"}`, indexData);
+			} else {
+				fs.writeFileSync(`./${name}/index.js`, indexData);
+				fs.writeFileSync(`./${name}/${name}.${isTS ? "tsx" : "jsx"}`, mainData);
+			}
+		}
 	} catch (err) {
 		console.log(err);
 	}
