@@ -11,7 +11,6 @@
   "scripts": {
     "setup": "yarn && npm i -g ."
   },
-  "private": true,
   "dependencies": {
     "yargs": "^16.2.0"
   },
