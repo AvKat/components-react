@@ -1,5 +1,5 @@
 const path = require("path");
-const ShebangPlugin = require("webpack-shebang-plugin");
+const webpack = require("webpack");
 
 module.exports = {
 	entry: "./src/index",
@@ -8,5 +8,7 @@ module.exports = {
 		filename: "index.js",
 	},
 	target: "node",
-	plugins: [new ShebangPlugin()],
+	plugins: [
+		new webpack.BannerPlugin({ banner: "#!/usr/bin/env node", raw: true }),
+	],
 };

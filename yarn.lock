@@ -801,6 +801,11 @@ terser@^5.5.1:
     source-map "~0.7.2"
     source-map-support "~0.5.19"
 
+typescript@^4.2.4:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
+  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
+
 uri-js@^4.2.2:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.4.1.tgz#9b1a52595225859e55f669d928f88c6c57f2a77e"
@@ -848,11 +853,6 @@ webpack-merge@^5.7.3:
   dependencies:
     clone-deep "^4.0.1"
     wildcard "^2.0.0"
-
-webpack-shebang-plugin@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/webpack-shebang-plugin/-/webpack-shebang-plugin-1.1.4.tgz#792b61f82d2973b4ee3f521d55e5f21d256dbecc"
-  integrity sha512-JBaXdgZ0VRHDqteeflc7Z/T6klZo9lH4bhcs17dLBUGAJUt82/Z0gooyylfSXpD95to7veNIt0K/7k48CB2QrA==
 
 webpack-sources@^2.1.1:
   version "2.2.0"
