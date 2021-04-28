@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: 12
       - run: npm install
+      - run: npm build
       - uses: JS-Devtools/npm-publish@v1
         with:
           token: ${{ secrets.TEST_AUTH_TOKEN }}
