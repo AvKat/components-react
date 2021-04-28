@@ -8,13 +8,20 @@
   "bin": {
     "crc": "./src/index.js"
   },
+  "files": [
+    "build"
+  ],
   "scripts": {
-    "setup": "yarn && npm i -g ."
+    "setup": "yarn && npm i -g .",
+    "build": "webpack --mode=production"
   },
   "dependencies": {
     "yargs": "^16.2.0"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "webpack": "^5.36.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-shebang-plugin": "^1.1.4"
   }
 }
