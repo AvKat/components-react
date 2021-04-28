@@ -1,12 +1,12 @@
 {
   "name": "@avkat/crc",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Ease the pain ot of rebuilding react-components",
   "main": "src/index.js",
   "author": "AvKat",
   "license": "MIT",
   "bin": {
-    "crc": "./src/index.js"
+    "crc": "./build/index.js"
   },
   "files": ["build", "templates"],
   "scripts": {
