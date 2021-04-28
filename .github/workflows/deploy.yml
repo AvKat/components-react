@@ -8,8 +8,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@dev
-      - uses: actions/setup-node@dev
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
         with:
           node-version: 12
       - run: npm install
