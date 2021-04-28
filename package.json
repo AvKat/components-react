@@ -1,6 +1,6 @@
 {
   "name": "@avkat/crc",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Ease the pain ot of rebuilding react-components",
   "main": "src/index.js",
   "author": "AvKat",
@@ -8,9 +8,7 @@
   "bin": {
     "crc": "./src/index.js"
   },
-  "files": [
-    "build"
-  ],
+  "files": ["build", "templates"],
   "scripts": {
     "setup": "yarn && npm i -g .",
     "build": "webpack --mode=production"
