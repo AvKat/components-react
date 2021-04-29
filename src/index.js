@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const { createComponent } = require("./create");
 const args = require("yargs/yargs")(process.argv.slice(2))
 	.scriptName("crc")
